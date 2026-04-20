@@ -72,8 +72,7 @@ if(form){
   const path = window.location.pathname.split('/').pop();
   const isLander = path === 'lander.html';
   if(!isLander) return;
-  if(sessionStorage.getItem('landerGateShown') === '1') return;
-  sessionStorage.setItem('landerGateShown', '1');
+ 
   const bd = document.createElement('div');
   bd.className = 'modal-backdrop';
   bd.innerHTML = `
